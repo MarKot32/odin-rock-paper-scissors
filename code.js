@@ -51,4 +51,12 @@ if(humanChoice === "rock"  && computerChoice === "rock"){
 }
 }
 
-playRound(humanSelection, computerSelection);
+function playGame() {
+    for(let i = 1; i <= 5; i++){
+        playRound(getHumanChoice(), getComputerChoice());
+    }
+
+    console.log(`Your score:${humanScore}, Computer score: ${computerScore}`);
+}
+
+playGame()
